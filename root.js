@@ -8,6 +8,8 @@
  document.body.appendChild(p);
  document.addEventListener("mousemove", e => {
   bg = `#${e.clientX}${e.clientY}`;
+  if (bg.length > 7)
+     bg = bg.slice(0, -2);
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
   p.textContent = f;
