@@ -5,7 +5,7 @@
  let f = ``;
  h.innerHTML = `
  hey there, i'm still building this site
- <small>psssst, move your cursor over the screen</small>
+ <br/>psssst, move your cursor over the screen
  `;
 
  document.body.appendChild(h);
