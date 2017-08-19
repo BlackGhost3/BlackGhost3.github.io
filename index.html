@@ -8,6 +8,15 @@
   </style>
 </head>
 <body>
-<script type="text/javascript" charset="utf-8" src="/root.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    let d = new Date();
+    const ver = `root.js?v=${d.getTime()}`;
+    (() => {
+      let script = document.createElement("script");
+      script.scr = `/${ver}`;
+      script.charset = "utf-8";
+      document.body.appendChild(script);
+    })();
+  </script>
 </body>
 </html>
