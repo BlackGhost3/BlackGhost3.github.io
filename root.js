@@ -10,8 +10,8 @@
   bg = `#${e.clientX}${e.clientY}`;
   if (bg.length < 7)
      bg += "000000";
-  if (bg.length > 7)
-     bg = bg.slice(0, -2);
+  while (bg.length > 7)
+    bg = bg.slice(0, -1);
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `\nbackground-color: ${bg}`;
   p.textContent = f;
