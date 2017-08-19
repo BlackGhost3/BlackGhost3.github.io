@@ -3,7 +3,11 @@
  let p = document.createElement("p");
  let bg = "#000000";
  let f = ``;
- h.textContent = "hey there, i'm still building this site";
+ h.innerHTML = `
+ hey there, i'm still building this site
+ <small>psssst, move your cursor over the screen</small>
+ `;
+
  document.body.appendChild(h);
  document.body.appendChild(p);
  document.addEventListener("mousemove", e => {
