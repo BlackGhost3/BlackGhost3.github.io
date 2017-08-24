@@ -1,9 +1,12 @@
 (()=>{
  let h = document.createElement("h1");
  let p = document.createElement("p");
+ let parent = document.createElement("div");
+ parent.appendChild(h);
+ parent.appendChild(p);
  let bg = "#000000";
  let f = ``;
- let reverse_bg = "";
+ let reverse_bg = "#fff";
  window.extra = {h,p,f, reverse_bg};
  h.innerHTML = `
  hey there, i'm still building this site
@@ -19,11 +22,9 @@
      bg += "000000";
   while (bg.length > 7)
     bg = bg.slice(0, -1);
-  reverse_bg = bg.slice(1, 4).split("").reverse().join("");
-  reverse_bg = "#" + reverse_bg;
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
-  f += `<br/> font color: ${reverse_bg}`;
+  f += `<br/> font color: #fff`;
   p.innerHTML = f;
   p.style.color = reverse_bg;
   h.style.color = reverse_bg;
