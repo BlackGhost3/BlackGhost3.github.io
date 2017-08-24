@@ -23,6 +23,7 @@
   window.extra.bg = bg;
   reverse_bg = bg.slice(1, -1).split("").reverse().join("");
   reverse_bg = "#" + reverse_bg;
+  f += `<br/> font color: ${reverse_bg}`;
   p.innerHTML = f;
   p.style.color = reverse_bg;
   h.style.color = reverse_bg;
