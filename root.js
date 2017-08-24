@@ -20,7 +20,7 @@
     bg = bg.slice(0, -1);
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
-  reverse_bg = bg.split("").reverse().join("");
+  reverse_bg = bg.slice(0, -1).split("").reverse().unshift("#").join("");
   // p.innerHTML = f;
   p.innerHTML = reverse_bg;
   console.log("color:", bg, " - R:",reverse_bg);
