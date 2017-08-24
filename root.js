@@ -2,6 +2,7 @@
  let h = document.createElement("h1");
  let p = document.createElement("p");
  let parent = document.createElement("div");
+ parent.classList.add("parent");
  parent.appendChild(h);
  parent.appendChild(p);
  let bg = "#000000";
