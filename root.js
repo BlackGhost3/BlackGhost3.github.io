@@ -33,7 +33,7 @@
   p.style.color = reverse_bg;
   h.style.color = reverse_bg;
   document.body.style.backgroundColor = bg;
-  parent.style = `transform: translate(${x}, ${y});`;
+  parent.style = `transform: translate(${x}px, ${y}px);`;
 
  });
 })();
