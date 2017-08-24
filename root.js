@@ -20,10 +20,10 @@
     bg = bg.slice(0, -1);
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
-  reverse_bg = bg.split("").reverse().join("");
+  window.reverse_bg = bg.split("").reverse().join("");
   p.innerHTML = f;
   console.log("color:", bg, " - R:",reverse_bg);
-  console.log(p.style.color = reverse_bg);
+  p.style.color = reverse_bg;
   h.style.color = reverse_bg;
   // document.body.style.backgroundColor = bg;
  });
