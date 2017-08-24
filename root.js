@@ -23,7 +23,7 @@
   reverse_bg = bg.split("").reverse().join("");
   p.innerHTML = f;
   console.log("color:", bg, " - R:",reverse_bg);
-  p.style.color = reverse_bg;
+  console.log(p.style.color = reverse_bg);
   h.style.color = reverse_bg;
   // document.body.style.backgroundColor = bg;
  });
