@@ -19,7 +19,7 @@
      bg += "000000";
   while (bg.length > 7)
     bg = bg.slice(0, -1);
-  reverse_bg = bg.slice(1, bg.length).split("").reverse().join("");
+  reverse_bg = bg.slice(1, 4).split("").reverse().join("");
   reverse_bg = "#" + reverse_bg;
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
