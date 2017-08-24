@@ -21,7 +21,7 @@
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
   window.extra.bg = bg;
-  reverse_bg = bg.slice(0, -1).split("").reverse().join("");
+  reverse_bg = bg.slice(1, -1).split("").reverse().join("");
   reverse_bg = "#" + reverse_bg;
   // p.innerHTML = f;
   p.innerHTML = reverse_bg;
