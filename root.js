@@ -4,6 +4,7 @@
  let bg = "#000000";
  let f = ``;
  let reverse_bg = "";
+ window.extra = {h,p,f, reverse_bg};
  h.innerHTML = `
  hey there, i'm still building this site
  <br/>psssst, move your cursor over the screen
