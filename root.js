@@ -13,16 +13,16 @@
  document.body.appendChild(h);
  document.body.appendChild(p);
  document.addEventListener("mousemove", e => {
+  window.extra.bg = bg;
   bg = `#${e.clientX}${e.clientY}`;
   if (bg.length < 7)
      bg += "000000";
   while (bg.length > 7)
     bg = bg.slice(0, -1);
+  reverse_bg = bg.slice(1, bg.length).split("").reverse().join("");
+  reverse_bg = "#" + reverse_bg;
   f = `x: ${e.clientX}, y: ${e.clientY}`;
   f += `<br/>background-color: ${bg}`;
-  window.extra.bg = bg;
-  reverse_bg = bg.slice(1, -1).split("").reverse().join("");
-  reverse_bg = "#" + reverse_bg;
   f += `<br/> font color: ${reverse_bg}`;
   p.innerHTML = f;
   p.style.color = reverse_bg;
