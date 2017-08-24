@@ -13,8 +13,7 @@
  <br/>psssst, move your cursor over the screen
  `;
 
- document.body.appendChild(h);
- document.body.appendChild(p);
+ document.body.appendChild(parent);
  document.addEventListener("mousemove", e => {
   window.extra.bg = bg;
   bg = `#${e.clientX}${e.clientY}`;
