@@ -3,6 +3,7 @@
  let p = document.createElement("p");
  let bg = "#000000";
  let f = ``;
+ let reverse_bg = "";
  h.innerHTML = `
  hey there, i'm still building this site
  <br/>psssst, move your cursor over the screen
@@ -17,8 +18,10 @@
   while (bg.length > 7)
     bg = bg.slice(0, -1);
   f = `x: ${e.clientX}, y: ${e.clientY}`;
-  f += `\nbackground-color: ${bg}`;
-  p.textContent = f;
+  f += `<br/>background-color: ${bg}`;
+  reverse_bg = bg.split("").reverse().join("");
+  p.innerHTML = f;
+  p.style.color = h.style.color = reverse_bg;
   document.body.style.backgroundColor = bg;
  });
 })();
