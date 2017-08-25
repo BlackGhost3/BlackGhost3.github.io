@@ -16,7 +16,7 @@ function stillMaking(){
     window.extra = { h, p, f, reverse_bg };
     h.innerHTML = `
  hey there, i'm still building this site
- <br/>psssst, move your cursor over the screen
+ <br/>psssst, move your cursor
  `;
 
     p.innerHTML = `x: unknown, y: unknown <br/>background-color: white <br/> font color: black`;
