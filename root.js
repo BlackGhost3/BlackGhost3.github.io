@@ -61,6 +61,6 @@ function socialMedia(){
         e.dataset.href = socialMedia[link];
     }
     for(let item in spans)
-        parent.appendChild(item);
+        parent.appendChild(spans[item]);
     document.body.appendChild(parent);
 }
