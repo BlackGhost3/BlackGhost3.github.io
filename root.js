@@ -60,7 +60,10 @@ function socialMedia(){
         e.textContent = link;
         e.dataset.href = socialMedia[link];
     }
-    for(let item in spans)
+    console.log(spans);
+    for(let item in spans){
         parent.appendChild(spans[item]);
+        console.log(spans[item])
+    }
     document.body.appendChild(parent);
 }
