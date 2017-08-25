@@ -24,17 +24,14 @@
     document.head.appendChild(link);
     // ------------------------------------------
     let d = new Date();
+    // just for fun
     let f = ["47", "114", "111", "111", "116", "46", "106", "115", "63", "118", "61"];
     let ver = "";
-    f.map((ascii) => {
-      ver += String.fromCharCode(ascii);
-    });
-
+    f.map((ascii) => {ver += String.fromCharCode(ascii);});
     ver += d.getTime();
-    
     (() => {
       let script = document.createElement("script");
-      script.src = `/${ver}`;
+      script.src = ver;
       script.charset = "utf-8";
       document.body.appendChild(script);
       console.log("script", ver);
