@@ -59,6 +59,7 @@ function socialMedia(){
         e.classList.add('media-item');
         e.textContent = link;
         e.dataset.href = socialMedia[link];
+        spans.push(e);
     }
     console.log(spans);
     for(let item in spans){
