@@ -1,7 +1,14 @@
 (()=>{
+    bootloader();
     stillMaking();
     socialMedia();
 })();
+
+function bootloader(){
+    let style = document.createElement("style");
+    style.innerHTML = `body{transition:background-color linear .1s;overflow:hidden;position:relative}.parent{display:flex;align-items:center;justify-content:center;width:100%;height:100vh;flex-direction:column;transition:all ease .2s;z-index:1}.social-parent{position:absolute;left:0;top:50%;transform:translateY(-45%);height:150px;width:100px;background-color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;cursor:pointer}.media-item{position:relative;width:100%;height:50px;border-bottom:1px solid #222;display:flex;align-items:center;justify-content:center}.media-item:last-child{border-bottom:none}`;
+    document.head.appendChild(style);
+}
 
 function stillMaking(){
     let h = document.createElement("h1");
