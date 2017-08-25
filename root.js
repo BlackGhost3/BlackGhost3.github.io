@@ -33,8 +33,8 @@
   p.style.color = reverse_bg;
   h.style.color = reverse_bg;
   document.body.style.backgroundColor = bg;
-  let TX = (x / 10),
-      TY = (y / 10);
+  let TX = (x / 5),
+      TY = (y / 5);
   parent.style = `transform: translate(${TX}px, ${TY}px);`;
 
  });
