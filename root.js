@@ -22,7 +22,7 @@ function stillMaking(){
     p.innerHTML = `x: unknown, y: unknown <br/>background-color: white <br/> font color: black`;
 
     document.body.appendChild(parent);
-    document.addEventListener("mousemove", e => {
+    parent.addEventListener("mousemove", e => {
         window.extra.bg = bg;
         let x = e.clientX,
             y = e.clientY;
