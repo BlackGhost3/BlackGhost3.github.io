@@ -60,6 +60,10 @@ function socialMedia(){
         e.textContent = link;
         e.dataset.href = socialMedia[link];
         spans.push(e);
+        e.addEventListener("click",function(e){
+            window.open(e.target.dataset.href, "_blank");
+            e.preventDefault();
+        });
     }
     console.log(spans);
     for(let item in spans){
