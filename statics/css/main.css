@@ -86,7 +86,7 @@ code[label]::before{
 
 .home > .banner{
   font-size: 3.5em;
-  margin-top: 15%;
+  margin-top: 25vh;
   color: rgb(179, 157, 219);
 }
 
@@ -94,7 +94,7 @@ code[label]::before{
   position: absolute;
   bottom: 0;
   margin: 0;
-  height: 60%;
+  height: 60vh;
   display: flex;
   align-items: stretch;
   flex-direction: row;
@@ -367,6 +367,155 @@ code[label]::before{
   }
 }
 
-@media screen (max-width: ) {
-  
+@media screen and (max-width: 1024px) {
+  code{
+    margin: 20px 0;
+    padding-left: 10px !important;
+  }
+  code[label]::before{
+    width: 30%;
+    position: unset !important;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #home > .banner{
+    margin-top: 30vh;
+    text-align: center;
+  }
+  #home > .description{
+    height: 45vh;
+  }
+
+  #home > .description > span{
+    padding: 3%;
+  }
+  #home > .description > .header{
+    font-size: 1.9em;
+    width: 80% !important;
+  }
+  #home > .description > span:nth-child(2){
+    width: 20% !important;
+  }
+  #home > .description > span:nth-child(3){
+    width: 30% !important;
+  }
+  #home > .description > .body{
+    font-size: 1.7em;
+    width: 70% !important;
+  }
+
+  #pricing > .content > .prices{
+    width: 100% !important;
+  }
+  #pricing > .content > .prices > .head{
+    font-size: 2.3em;
+  }
+  #pricing > .content > .prices > .price{
+    font-size: 2em;
+  }
+  #pricing > .content > .prices > .price > .description{
+    font-size: .7em !important; 
+  }
+  #pricing > .content > .prices > .price > .description::before{
+    display: none !important;
+  }
+  #pricing > .content > .prices > .price > .description > p{
+    margin: 5px 0;
+  }
+
+  #aboutme > .home-icon{
+    top: unset !important;
+    bottom: 10vh;
+  }
+  #aboutme > .content{
+    width: 100% !important;
+    margin-top: 25% !important;
+    width: 90% !important;
+  }
+  #aboutme > .content > .me{
+    margin-bottom: 10%;
+    font-size: 1.9em !important;
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  code{
+   font-size: .9em !important; 
+   background-color: #222222 !important;
+   text-align: left;
+   border-left: 5px solid rgba(236, 29, 29, 1);
+   padding-left: 10px !important;
+  }
+  #home > .banner{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2em !important;
+  }
+  #home > .description{
+    height: 70vh;
+  }
+  #home > .description > .header{
+    font-size: 1.5em;
+  }
+  #home > .description > .body{
+    font-size: 1.3em;
+  }
+  #home > .description > .arrow-down > span{
+    margin-top: 20%;
+  }
+  #home > .description > .arrow-down > span > .fa{
+    font-size: 4em;
+  }
+
+  #pricing > .content{
+    overflow-y: auto;
+  }
+
+  #pricing > .content > .prices{
+    width: 90% !important;
+    flex-wrap: wrap;
+  }
+  #pricing > .content > .prices > .head{
+    font-size: 2em;
+  }
+  #pricing > .content > .prices > .price{
+    font-size: 1.3em;
+    margin: 15px 3px !important;
+  }
+  #pricing > .content > .prices > .price > .description{
+    font-size: .7em !important; 
+  }
+  #pricing > .content  > .arrow-container{
+    margin-bottom: 15%;
+    transform: translateY(135vh) !important;
+  }
+
+  #aboutme > .content{
+    overflow-y: auto;
+    margin-top: 0 !important;
+  }
+  #aboutme > .content > .me{
+    padding-top: 0 !important;
+    font-size: 1.3em !important;
+  }
+  #aboutme > .content > .me > .desciption {
+    margin: 50% 0 !important;
+    display: block;
+  }
+  #aboutme > .content > .infocard{
+    width: 100% !important;
+    flex-direction: column;
+  }
+  #aboutme > .content > .infocard > .info-data-parent{
+    width: 90% !important;
+  }
+
+  #aboutme > .home-icon > span > .fa-3x{
+    font-size: 2em !important;
+  }
+  #aboutme > .home-icon > span:first-child::before{
+    height: 65px !important;
+    font-size: 2em !important;
+  }
 }
