@@ -1,0 +1,11 @@
+{
+    "ar" : {
+        "currency" : {
+            "type": "IQD",
+            "translated" : "الف دينار"
+        },
+        "home" : {
+            "banner" : ""
+        }
+    }
+}

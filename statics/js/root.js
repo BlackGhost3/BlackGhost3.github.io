@@ -62,6 +62,11 @@ class Karam {
     }
     this.locale.used = window.navigator.languages;
   }
+
+  translate(){
+    // idk, I might add it in future
+    // karamkarim.cf/json/translation.json
+  }
 }
 
 class Tools {
