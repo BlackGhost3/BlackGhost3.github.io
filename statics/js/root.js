@@ -4,6 +4,11 @@
 class Karam {
   constructor(tools) {
     this.doc = document;
+    this.locale = {
+      ar : false,
+      en : true,
+      used : []
+    }
     this.body = document.body;
     this.tools = null;
     this.elems = {
@@ -20,6 +25,8 @@ class Karam {
     console.info("window loaded");
     this.removePreloader();
     this.navClicks()
+    this.getlocale()
+    this.translate()
   }
 
   removePreloader(){
@@ -38,8 +45,7 @@ class Karam {
 
   navigateNavClicks(e){
     for (let i =0; i < this.elems.nav.length; i++)
-        // if (this.elems.nav[i].classList.contains("active"))
-                this.elems.nav[i].classList.remove("active");
+        this.elems.nav[i].classList.remove("active");
     let targetName = e.target.getAttribute("js-nav-click"),
         target = document.querySelector(`#${targetName}`);
       if (!target.classList.contains("active"))
@@ -48,6 +54,14 @@ class Karam {
               this.elems.nav.push(target);
   }
 
+  getlocale(){
+    if ("ar" in window.navigator.languages) {
+      this.locale.ar = true;
+    } else if("en" in window.navigator.languages){
+      this.locale.en = true;
+    }
+    this.locale.used = window.navigator.languages;
+  }
 }
 
 class Tools {
