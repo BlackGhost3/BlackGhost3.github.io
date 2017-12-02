@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/blackghost3
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://karamkarim.cf
+  * I am blackghost3 (https://keybase.io/blackghost3) on keybase.
+  * I have a public key ASCH7gVkeRgfSwoq9BZHPX0QmrKyZNuzQLWToXSnRhWFdwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012087ee056479181f4b0a2af416473d7d109ab2b264dbb340b593a174a7461585770a",
+      "host": "keybase.io",
+      "kid": "012087ee056479181f4b0a2af416473d7d109ab2b264dbb340b593a174a7461585770a",
+      "uid": "ca3fe89c05c5141fa59fe6a520edcd19",
+      "username": "blackghost3"
+    },
+    "merkle_root": {
+      "ctime": 1512212890,
+      "hash": "8b1b8c917236195de8f3f38588a3c3afe096d84f54bc00c79ba68881f857ab24fb34a1298494b17288e850874519d88980926d0feb76f97de37303d30aa227cb",
+      "hash_meta": "27d0df3e7e07b20661d98072ffcbdbf1f3155615d189f398d32dc25e758b6006",
+      "seqno": 1771648
+    },
+    "service": {
+      "hostname": "karamkarim.cf",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1512212956,
+  "expire_in": 504576000,
+  "prev": "59f7d0ee3c16919404cd83411ee504882d64fe274de122b4c87870b044148177",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgh+4FZHkYH0sKKvQWRz19EJqysmTbs0C1k6F0p0YVhXcKp3BheWxvYWTFA0d7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODdlZTA1NjQ3OTE4MWY0YjBhMmFmNDE2NDczZDdkMTA5YWIyYjI2NGRiYjM0MGI1OTNhMTc0YTc0NjE1ODU3NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODdlZTA1NjQ3OTE4MWY0YjBhMmFmNDE2NDczZDdkMTA5YWIyYjI2NGRiYjM0MGI1OTNhMTc0YTc0NjE1ODU3NzBhIiwidWlkIjoiY2EzZmU4OWMwNWM1MTQxZmE1OWZlNmE1MjBlZGNkMTkiLCJ1c2VybmFtZSI6ImJsYWNrZ2hvc3QzIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTEyMjEyODkwLCJoYXNoIjoiOGIxYjhjOTE3MjM2MTk1ZGU4ZjNmMzg1ODhhM2MzYWZlMDk2ZDg0ZjU0YmMwMGM3OWJhNjg4ODFmODU3YWIyNGZiMzRhMTI5ODQ5NGIxNzI4OGU4NTA4NzQ1MTlkODg5ODA5MjZkMGZlYjc2Zjk3ZGUzNzMwM2QzMGFhMjI3Y2IiLCJoYXNoX21ldGEiOiIyN2QwZGYzZTdlMDdiMjA2NjFkOTgwNzJmZmNiZGJmMWYzMTU1NjE1ZDE4OWYzOThkMzJkYzI1ZTc1OGI2MDA2Iiwic2Vxbm8iOjE3NzE2NDh9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia2FyYW1rYXJpbS5jZiIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzYifSwiY3RpbWUiOjE1MTIyMTI5NTYsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiNTlmN2QwZWUzYzE2OTE5NDA0Y2Q4MzQxMWVlNTA0ODgyZDY0ZmUyNzRkZTEyMmI0Yzg3ODcwYjA0NDE0ODE3NyIsInNlcW5vIjo5LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQIGoiN9x7IbZe/QPSftqbJ0IKyHSLzM1RqSQATVRAHOTOiquPukXsxsdqSbCuCm5wjzgm28+UL9oAS0FlKfFrgKoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCKQAmfGIpK6vApK46HYcwAB3/9r3qBZ5u9xu+ng6sB4aN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/blackghost3
+
+==================================================================
