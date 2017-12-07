@@ -167,7 +167,7 @@ code[label]::before{
 }
 
 #app > .pricing > .content > .prices {
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -210,6 +210,9 @@ code[label]::before{
   font-size: .9em;
 }
 
+#app > .pricing > .content > .prices > .price > .description > p{
+  text-transform: capitalize;
+}
 
 #app > .pricing > .content > .prices > .price > .description::before, 
 #app > .pricing > .content > .prices > .price > .description::after{
@@ -237,7 +240,7 @@ code[label]::before{
 
 
 #app > .pricing.active > .content > .arrow-container > span > i{
-  animation: leftArrow 1s infinite normal 5s;
+  animation: leftArrow 1s infinite normal 3s;
 }
 
 /* ---------------------------------------------------- */
@@ -488,7 +491,7 @@ code[label]::before{
   }
   #pricing > .content  > .arrow-container{
     margin-bottom: 15%;
-    transform: translateY(135vh) !important;
+    transform: translateY(30vh) !important;
   }
 
   #aboutme > .content{
