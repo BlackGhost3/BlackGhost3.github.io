@@ -1,4 +1,3 @@
-
 'use strict';
 
 class Karam {
@@ -24,9 +23,11 @@ class Karam {
   run(e){
     console.info("window loaded");
     this.removePreloader();
-    this.navClicks()
-    this.getlocale()
-    this.translate()
+    this.navClicks();
+    this.getLocale();
+    this.translate();
+    this.hashCheck();
+    this.hashChange();
   }
 
   removePreloader(){
@@ -54,7 +55,7 @@ class Karam {
               this.elems.nav.push(target);
   }
 
-  getlocale(){
+  getLocale(){
     if ("ar" in window.navigator.languages) {
       this.locale.ar = true;
     } else if("en" in window.navigator.languages){
@@ -66,6 +67,20 @@ class Karam {
   translate(){
     // idk, I might add it in future
     // karamkarim.cf/json/translation.json
+  }
+
+  toCV(){
+    window.location.href = "./cv/";
+  }
+
+  hashChange(){
+    if ("onhashchange" in window)
+      window.addEventListener("hashchange", this.hashCheck.bind(this), false);
+  }
+
+  hashCheck(){
+    if(window.location.hash == "#cv")
+      this.toCV();
   }
 }
 
