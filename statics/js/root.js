@@ -49,8 +49,14 @@ class Karam {
         this.elems.nav[i].classList.remove("active");
     let targetName = e.target.getAttribute("js-nav-click"),
         target = document.querySelector(`#${targetName}`);
-      if (!target.classList.contains("active"))
+      if (!target.classList.contains("active") && target in this.dontShow === false)
               target.classList.add("active");
+      if(target in this.dontShow && target.dataset.js-fallback != ""){
+        // fall back if target won't show
+        let fallback = document.querySelector(`${target.dataset}`);
+        fallback.classList.add("active");
+      }
+
       if(target in this.elems.nav === false)
               this.elems.nav.push(target);
   }
@@ -81,6 +87,10 @@ class Karam {
   hashCheck(){
     if(window.location.hash == "#cv")
       this.toCV();
+  }
+
+  ignoreView(id){
+    this.dontShow.push(document.querySelector(`#${id}`));
   }
 }
 
