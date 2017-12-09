@@ -13,6 +13,7 @@ class Karam {
     this.elems = {
       nav : []
     };
+    this.dontShow = [];
     if(tools instanceof Tools == false){
         throw new Error("tools must be instance of class Tools");
     }else {
