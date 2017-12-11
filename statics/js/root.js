@@ -40,26 +40,33 @@ class Karam {
 
   navClicks(){
     let navs = document.querySelectorAll("[js-nav-click]");
+    let targets = document.querySelectorAll(".view");
+    // push them to class global variable
+    targets.forEach((elem) => {
+      if (this.elems.nav.indexOf(elem) == -1)
+        this.elems.nav.push(elem);
+    });
     if(!navs) return;
     for (const nav of navs)
         nav.addEventListener("click", this.navigateNavClicks.bind(this));
   }
 
   navigateNavClicks(e){
-    for (let i =0; i < this.elems.nav.length; i++)
-        this.elems.nav[i].classList.remove("active");
-    let targetName = e.target.getAttribute("js-nav-click"),
-        target = document.querySelector(`#${targetName}`);
-      if (!target.classList.contains("active") && target in this.dontShow === false)
-              target.classList.add("active");
-      if(target in this.dontShow && target.dataset.js-fallback != ""){
-        // fall back if target won't show
-        let fallback = document.querySelector(`${target.dataset}`);
-        fallback.classList.add("active");
+    console.log(this.elems.nav);
+    for (let i =0; i < this.elems.nav.length; i++){
+        this.elems.nav[i].classList.remove("active")
       }
 
-      if(target in this.elems.nav === false)
-              this.elems.nav.push(target);
+    let targetName = e.target.getAttribute("js-nav-click"),
+        target = document.querySelector(`#${targetName}`);
+    if (target.classList.contains("active") == false && this.dontShow.indexOf(target.id) == -1)
+          target.classList.add("active");
+
+    if (this.dontShow.indexOf(target.id) != -1){
+        // fall back if target won't show
+        let fallback = document.querySelector(`${e.target.dataset.fallback}`);
+        fallback.classList.add("active");
+      }
   }
 
   getLocale(){
@@ -86,12 +93,17 @@ class Karam {
   }
 
   hashCheck(){
-    if(window.location.hash == "#cv")
-      this.toCV();
+      switch (window.location.hash) {
+        case "#cv":
+          this.toCV();
+          break;
+        case "#np":
+          this.ignoreView("pricing");
+      }
   }
 
   ignoreView(id){
-    this.dontShow.push(document.querySelector(`#${id}`));
+    this.dontShow.push(id);
   }
 }
 
