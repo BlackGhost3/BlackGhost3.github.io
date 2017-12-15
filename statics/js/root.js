@@ -47,7 +47,7 @@ class Karam {
         this.elems.nav.push(elem);
     });
     if(!navs) return;
-    for (const nav of navs)
+    for (let nav of navs)
         nav.addEventListener("click", this.navigateNavClicks.bind(this));
   }
 
