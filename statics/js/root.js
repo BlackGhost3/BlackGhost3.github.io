@@ -94,10 +94,10 @@ class Karam {
   }
 
   toRAT(){
-    alertifyJs.confirm("Redirect To Github", "Do you want to view noderat's source code ?", () => {
+    alertify.confirm("Redirect To Github", "Do you want to view noderat's source code ?", () => {
       location.href = "https://github.com/node-rat/NodeRAT";
     }, () => {
-      alertifyJs.alert("Redirection canceled");
+      alertify.alert("Redirection canceled");
     });
   }
 
