@@ -94,7 +94,7 @@ class Karam {
   }
 
   toRAT(){
-    alertify.confirm("Redirect To Github", "Do you want to view noderat's source code ?", () => {
+    alertify.confirm("Redirect To Github", "noderat's executable is not available right now, would you like to checkout noderat's source code ?", () => {
       location.href = "https://github.com/node-rat/NodeRAT";
     }, () => {
       alertify.alert("Redirection canceled");
