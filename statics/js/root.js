@@ -19,6 +19,12 @@ class Karam {
     }else {
       this.tools = tools;
     }
+
+    let alertifyJs = document.createElement("script");
+    alertifyJs.src = "/statics/alertifyjs/alertify.min.js";
+    alertifyJs.charset = "UTF-8";
+    document.body.appendChild(alertifyJs);
+
   }
 
   run(e){
@@ -87,6 +93,10 @@ class Karam {
     window.location.href = "./cv/";
   }
 
+  toRAT(){
+    
+  }
+
   hashChange(){
     if ("onhashchange" in window)
       window.addEventListener("hashchange", this.hashCheck.bind(this), false);
@@ -99,6 +109,10 @@ class Karam {
           break;
         case "#np":
           this.ignoreView("pricing");
+          break;
+        case "#rat":
+          this.toRAT();
+          break;
       }
   }
 
@@ -121,6 +135,7 @@ class Tools {
   randomInt(min = 0, max = 900){
     return Math.floor( Math.random() * (min - max) + max );
   }
+
 
 }
 
