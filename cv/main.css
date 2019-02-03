@@ -37,10 +37,10 @@ body{
 }
 
 .img{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #eeeeee;
-  padding: 15px;
+/*   padding: 15px; */
   border-radius: 50%;
 }
 .img > img{
